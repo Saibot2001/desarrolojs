@@ -1,0 +1,393 @@
+/*ESTILOS DEL BODY*/
+body {
+  background-image: url(../images/imagenes/fondo.jpg);
+  object-fit: cover;
+}
+
+main {
+  min-height: 100vh;
+}
+
+#header {
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.253);
+}
+
+#navBar {
+  color: green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navBar ul li a {
+  font-size: 20px;
+  margin-left: 20px;
+  color: black;
+  transition: 0.5s;
+}
+
+#navBar ul {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+}
+
+#navBar img {
+  width: 100px;
+  border-radius: 100%;
+}
+
+#navBar ul a:hover {
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.253);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*ARTICULO LOGO*/
+#footer img {
+  width: 100px;
+  border-radius: 100%;
+}
+
+/*ARTICULO NAVBAR*/
+.footer__links ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__links ul li a {
+  color: black;
+  font-size: 25px;
+  margin-top: 7px;
+}
+
+.footerRedes {
+  height: 60px;
+}
+
+/*SECCION BANNER*/
+#presentacion h1 {
+  text-align: center;
+  width: auto;
+  background-color: rgba(128, 0, 128, 0.61);
+  font-size: 50px;
+  border-radius: 100px;
+}
+
+#presentacion {
+  display: flex;
+  margin: 50px;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 90px;
+}
+
+#plataformasDisenios {
+  margin: 50px;
+}
+
+#plataformasDisenios h1 {
+  text-align: center;
+  margin-top: 20px;
+  width: auto;
+  background-color: rgba(128, 0, 128, 0.61);
+  font-size: 50px;
+  border-radius: 100px;
+}
+
+#plataformasDisenios .plataformas {
+  margin-top: -180px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#plataformasDisenios ul li img {
+  height: 500px;
+}
+
+#trabajos {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#trabajos h1 {
+  margin: 20px;
+  font-size: 60px;
+  margin-top: 60px;
+}
+
+#trabajos img {
+  border-radius: 20px;
+}
+
+#materiales {
+  display: flex;
+  display: block;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#materiales img {
+  border-radius: 50px;
+  margin-bottom: 20px;
+  height: 600px;
+}
+
+#materiales h1 {
+  margin: 30px;
+  font-size: 60px;
+}
+
+#materiales h5 {
+  background-color: rgba(255, 255, 255, 0.404);
+  color: purple;
+  font-size: 40px;
+  border-radius: 20px;
+}
+
+#materiales p {
+  background-color: rgba(255, 255, 255, 0.404);
+  border-radius: 40px;
+  color: purple;
+  font-size: 30px;
+}
+
+/*
+.carousel{
+    width: 50%;
+    height: 700px;
+}
+.carousel .carousel-item {
+    height: 700px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;      
+    left: 0;
+    min-height: 1 px;
+    margin: 20px;
+}
+*/
+#materiales carouselExampleCaptions {
+  height: 300px;
+}
+
+.productosBox {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.productosBox article {
+  background-color: rgba(128, 0, 128, 0.473);
+  border-radius: 10%;
+}
+
+.productosBox img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10%;
+}
+
+@media (max-width: 768px) {
+  .productosBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productosBox article {
+    width: 320px;
+  }
+}
+.contactos article {
+  display: flex;
+  margin: 30px;
+}
+
+.contactos img {
+  height: 50px;
+  border: 100px;
+  margin-right: 20px;
+}
+
+.mediosContacto .telefono img {
+  margin-left: 20px;
+}
+
+.contactos .introContacto h2 {
+  padding: 30px;
+  border-radius: 30px;
+  background-color: rgba(128, 0, 128, 0.397);
+}
+
+.contactos .introContacto {
+  margin: 10px;
+  margin-top: 60px;
+}
+
+.puntosEntrega h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+.mapas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.mapas iframe {
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .mapas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.puntosEntrega h2 {
+  margin-bottom: 30px;
+}
+
+#banner .imagen {
+  position: absolute;
+  text-align: center;
+  margin-top: 100px;
+}
+
+form.form-contacto {
+  display: table;
+  background-color: rgba(128, 0, 128, 0.397);
+  padding: 20px;
+  border-radius: 10%;
+}
+
+div.form-contacto {
+  display: table-row;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+.formContacto {
+  margin-left: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+li {
+  font-style: none;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#banner {
+  margin-top: 80px;
+}
+
+#banner .nosotros {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  background-color: rgba(255, 255, 255, 0.363);
+  text-align: center;
+}
+
+#banner .nosotros h1 {
+  font-size: 60px;
+}
+
+#banner .nosotros p {
+  font-size: 40px;
+}
+
+#impresora {
+  display: flex;
+  flex-direction: row;
+}
+
+#impresora img {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  margin: 30px;
+  margin-top: 0px;
+}
+
+#impresora specsImpresora {
+  margin-left: 20px;
+}
+
+
+#productos{
+  margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: space-around;
+}
+#productos div{
+  background-color: rgba(128, 0, 128, 0.473);
+  border-radius: 10%;
+}
+#productos img{
+  
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.body {
+  background-image: url(../images/imagenes/fondo.jpg);
+  object-fit: cover;
+}
+main{
+  min-height: 100vh;
+}
+
+
+/*# sourceMappingURL=style..css.map */
